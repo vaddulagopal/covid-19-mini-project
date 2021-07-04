@@ -1,0 +1,53 @@
+.each-sec-container {
+  height: 93px;
+  width: 93px;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .each-sec-container {
+    height: 124px;
+    width: 139px;
+    margin-right: 154px;
+  }
+}
+.confirmed {
+  color: #ff073a;
+}
+.deceased {
+  color: 6c757d;
+}
+.recovered {
+  color: #28a745;
+}
+.active {
+  color: #007bff;
+}
+
+.detail-name {
+  font-size: 12px;
+  font-family: 'roboto';
+  align: center;
+  vertical-align: top;
+}
+@media (min-width: 768px) {
+  .detail-name {
+    font-size: 16px;
+    align: left;
+  }
+}
+.confirmed-icon {
+  height: 38px;
+  width: 38px;
+  align: center;
+}
+.confirmed-number-stat {
+  font-size: 16px;
+  font-weight: 500;
+  align: left;
+  font-family: 'Roboto';
+}
+@media (min-width: 768px) {
+  .confirmed-number-stat {
+    font-size: 24px;
+  }
+}

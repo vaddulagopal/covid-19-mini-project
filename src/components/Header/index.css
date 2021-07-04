@@ -1,0 +1,83 @@
+.navbar-container {
+  background-color: #1e1e30;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .navbar-container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+.nav-link {
+  text-decoration: none;
+}
+.logo {
+  font-family: 'Bree Serif';
+  font-style: 'Regular';
+  font-size: 20px;
+  line-height: 24px;
+  line-height: 88%;
+}
+.logo-title {
+  color: #f8fafc;
+}
+.country-name {
+  color: #007bff;
+}
+@media (min-width: 768px) {
+  .logo {
+    font-size: 16px;
+    line-height: 110%;
+  }
+}
+.icons-container-large {
+  display: none;
+}
+@media (min-width: 768px) {
+  .icons-container-large {
+    display: flex;
+  }
+}
+.home-link {
+  list-style: none;
+  margin-right: 75px;
+  width: 43px;
+  height: 24px;
+  color: #f8fafc;
+  font-size: 16px;
+  font-family: 'roboto';
+}
+.about-link {
+  list-style: none;
+
+  width: 43px;
+  height: 24px;
+  font-size: 16px;
+  font-family: 'roboto';
+  color: #94a3b8;
+}
+@media (min-width: 768px) {
+  .small-devices-navbar {
+    display: none;
+  }
+}
+.icon {
+  width: 10px;
+  height: 24px;
+}
+
+.mobile-link-container-display {
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+  top: 48px;
+  background-color: #1e1e30 !important;
+}
+.mobile-link-container-none {
+  display: none;
+}

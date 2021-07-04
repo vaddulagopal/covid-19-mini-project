@@ -1,0 +1,75 @@
+.home-bg-container {
+  background-color: #161625;
+  position: absolute;
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search-home-container {
+}
+.brief-details-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 106px;
+}
+
+.confirmed {
+  color: #ff073a;
+}
+.deceased {
+  color: 6c757d;
+}
+.recovered {
+  color: #28a745;
+}
+.active {
+  color: #007bff;
+}
+.population {
+  color: #94a3b8;
+}
+.state {
+  color: #f1f5f9;
+}
+
+.state-wise-data-container {
+  width: 1146px;
+  background-color: 1e1e30;
+  border: 16px solid #475569;
+  border-width: 1px;
+  shadow: 0 0 0 0 16;
+  padding-left: 32px;
+  padding-right: 35px;
+}
+.line {
+  color: #475569;
+}
+
+.headings-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading-text {
+  font-size: 16px;
+  font-family: 'Roboto';
+  color: #f8fafc;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.state-detail-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.list-text {
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
