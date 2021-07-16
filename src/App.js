@@ -160,9 +160,15 @@ const App = () => (
       <Route
         exact
         path="/"
-        component={() => <Home statesList={statesList} />}
+        component={() => <Home statesList1={statesList} />}
       />
-      <Route exact path="/state/:stateId" component={StateDetails} />
+      <Route
+        exact
+        path="/state/:stateId"
+        component={match => (
+          <StateDetails match={match} statesList1={statesList} />
+        )}
+      />
       <Route exact path="/about" component={About} />
       <Route component={NotFound} />
     </Switch>

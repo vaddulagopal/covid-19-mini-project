@@ -3,11 +3,18 @@ import './index.css'
 
 const SearchStateList = props => {
   const {matchedStateList} = props
-  console.log(matchedStateList)
-  const id = matchedStateList[0][0]
+  const id = matchedStateList[1].state_code
+  const stateName = matchedStateList[1].state_name
   return (
-    <Link to={`/state/${id}`}>
-      <li className="search-state-item">state name</li>
+    <Link className="link-style" to={`/state/${id}`}>
+      <li className="search-state-item-list">
+        <div className="search-state-item">
+          <span className="search-state-name">{stateName}</span>
+          <div className="state-code-container">
+            <span className="search-state-code">{id}</span>
+          </div>
+        </div>
+      </li>
     </Link>
   )
 }

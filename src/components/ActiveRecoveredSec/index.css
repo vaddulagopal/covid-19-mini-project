@@ -1,26 +1,58 @@
+.brief-details-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
 .each-sec-container {
-  height: 93px;
-  width: 93px;
+  height: 148px;
+  width: 148px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 @media (min-width: 768px) {
   .each-sec-container {
-    height: 124px;
-    width: 139px;
-    margin-right: 154px;
+    height: 170px;
+    width: 170px;
+    align-items: center;
+  }
+}
+@media (min-width: 992px) {
+  .each-sec-container {
+    height: 232px;
+    width: 264px;
   }
 }
 .confirmed {
   color: #ff073a;
 }
+.confirmed:hover {
+  background-color: #331427;
+  border-radius: 12px;
+}
 .deceased {
-  color: 6c757d;
+  color: #6c757d;
+}
+.deceased:hover {
+  background-color: #1c1c2b;
+  border-radius: 12px;
 }
 .recovered {
   color: #28a745;
 }
+.recovered:hover {
+  background-color: #182829;
+  border-radius: 12px;
+}
 .active {
   color: #007bff;
+}
+.active:hover {
+  background-color: #132240;
+  border-radius: 12px;
 }
 
 .detail-name {
@@ -28,8 +60,14 @@
   font-family: 'roboto';
   align: center;
   vertical-align: top;
+  background-color: transparent;
 }
 @media (min-width: 768px) {
+  .detail-name {
+    font-size: 15px;
+  }
+}
+@media (min-width: 992px) {
   .detail-name {
     font-size: 16px;
     align: left;
@@ -45,6 +83,15 @@
   font-weight: 500;
   align: left;
   font-family: 'Roboto';
+}
+@media (min-width: 600px and max-width:768px) {
+  .confirmed-number-stat {
+    font-size: 20px;
+  }
+  .confirmed-icon {
+    height: 45px;
+    width: 45px;
+  }
 }
 @media (min-width: 768px) {
   .confirmed-number-stat {

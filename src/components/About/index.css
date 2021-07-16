@@ -1,0 +1,95 @@
+.state-loader-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #161625;
+}
+.about-sec-container {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: #161625;
+}
+
+@media (min-width: 768px) {
+  .about-sec-container {
+    padding-left: 70px;
+    padding-right: 64px;
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+}
+@media (min-width: 992px) {
+  .about-sec-container {
+    padding-left: 150px;
+    padding-right: 144px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+.question {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .question {
+    font-size: 16px;
+  }
+}
+
+.about-heading {
+  color: #f8fafc;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .about-heading {
+    font-size: 48px;
+  }
+}
+
+.about-vaccine {
+  font-size: 16px;
+  color: #e2e8f0;
+  font-family: 'roboto';
+  font-weight: 500;
+  font-style: medium;
+  margin-bottom: 24px;
+}
+
+.answer {
+  color: #007bff;
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .about-vaccine {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+  .answer {
+    font-size: 16px;
+  }
+}
+.home-link {
+  list-style: none;
+  margin-right: 75px;
+  width: 43px;
+  height: 24px;
+  color: #94a3b8;
+  font-size: 16px;
+  font-family: 'roboto';
+}
+.about-link {
+  list-style: none;
+
+  width: 43px;
+  height: 24px;
+  font-size: 16px;
+  font-family: 'roboto';
+  color: #f8fafc;
+}

@@ -1,0 +1,67 @@
+.search-state-item-list {
+  list-style-type: none;
+}
+.search-state-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 312px;
+  height: 48px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 24px;
+}
+@media (min-width: 768px) {
+  .search-state-item {
+    width: 600px;
+  }
+}
+@media (min-width: 992px) {
+  .search-state-item {
+    width: 824px;
+    height: 48px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 32px;
+    padding-right: 24px;
+  }
+}
+.search-state-item:hover {
+  background-color: #1f1f30;
+  border: 1px solid #94a3b8;
+}
+.search-state-name {
+  color: #64748b;
+  font-size: 16px;
+  font-family: 'roboto';
+}
+.state-code-container {
+  background-color: rgba(28, 212, 212, 0.16);
+  width: 63px;
+  height: 24px;
+  padding-left: 16px;
+  padding-top: 2px;
+}
+@media (min-width: 992px) {
+  .stateCode-container {
+    height: 28px;
+    width: 55px;
+  }
+}
+@media (min-width: 992px) {
+  .stateCode-container {
+    height: 32px;
+    width: 76px;
+  }
+}
+.search-state-code {
+  color: #facc15;
+  font-size: 16px;
+  font-style: 'SemiBold';
+  font-family: 'HK Grotesk';
+}
+
+.link-style {
+  text-decoration: none;
+}

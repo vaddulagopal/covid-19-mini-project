@@ -1,51 +1,93 @@
 .home-bg-container {
   background-color: #161625;
-  position: absolute;
-  width: 1440px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.search-home-container {
+@media (min-width: 768px) {
+  .home-bg-container {
+    width: 100%;
+  }
 }
-.brief-details-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-bottom: 106px;
-}
-
-.confirmed {
+.confirmed-table {
   color: #ff073a;
+  text-align: right;
+  width: 84px;
 }
-.deceased {
-  color: 6c757d;
+.deceased-table {
+  color: #6c757d;
+  text-align: right;
+  width: 84px;
 }
-.recovered {
+.recovered-table {
   color: #28a745;
+  text-align: right;
+  width: 84px;
 }
-.active {
+.active-table {
   color: #007bff;
+  text-align: right;
+  width: 84px;
 }
-.population {
+.population-table {
   color: #94a3b8;
+  text-align: right;
+  width: 84px;
 }
-.state {
+.state-table {
   color: #f1f5f9;
+  width: 150px;
 }
 
+.table-container {
+  width: 90vw;
+  margin-left: 25px;
+  overflow-x: auto;
+}
+@media (min-width: 768px) {
+  .table-container {
+    width: 90vw;
+    margin-left: 60px;
+    overflow-x: auto;
+  }
+}
+@media (min-width: 992px) {
+  .table-container {
+    width: 95vw;
+    overflow-x: auto;
+  }
+}
 .state-wise-data-container {
-  width: 1146px;
-  background-color: 1e1e30;
+  background-color: #1e1e30;
   border: 16px solid #475569;
   border-width: 1px;
   shadow: 0 0 0 0 16;
   padding-left: 32px;
   padding-right: 35px;
 }
+@media (min-width: 768px) {
+  .state-wise-data-container {
+    align: center;
+    width: 90vw;
+    overflow-x: visible;
+  }
+}
+@media (min-width: 992px) {
+  .state-wise-data-container {
+    width: 90vw;
+    align: center;
+    overflow-x: visible;
+  }
+}
 .line {
   color: #475569;
+  width: 839px;
+}
+@media (min-width: 768px) {
+  .line {
+    width: 1146px;
+  }
 }
 
 .headings-container {
@@ -67,6 +109,9 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 25px;
+}
+.state-numbers-align {
+  text-align: right;
 }
 .list-text {
   font-size: 14px;

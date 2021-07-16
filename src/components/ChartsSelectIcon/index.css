@@ -1,0 +1,118 @@
+.chart-container {
+  width: 80vw;
+  height: 231px;
+  padding-left: 26px;
+  padding-right: 14px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+@media (min-width: 768px) {
+  .chart-container {
+    width: 80vw;
+    height: 328px;
+    padding-top: 30px;
+    padding-left: 66px;
+    padding-right: 62px;
+    padding-bottom: 49px;
+    padding-top: 41px;
+    margin-bottom: 32px;
+  }
+}
+@media (min-width: 992px) {
+  .chart-container {
+    width: 80vw;
+    height: 328px;
+    padding-top: 30px;
+    padding-left: 66px;
+    padding-right: 62px;
+    padding-bottom: 49px;
+    padding-top: 41px;
+    margin-bottom: 32px;
+  }
+}
+.confirmed-chart {
+  background-color: #331427;
+}
+.recovered-chart {
+  background-color: #182829;
+}
+.deceased-chart {
+  background-color: #1c1c2b;
+}
+.tested-chart {
+  background-color: #230f41;
+}
+.vaccination-chart {
+  background-color: #2e1e30;
+}
+.active-chart {
+  background-color: #132240;
+}
+.positive-ratio {
+  background-color: #332323;
+}
+.charts-heading {
+  color: #cbd5e1;
+  font-size: 24px;
+  font-family: 'roboto';
+  text-align: center;
+  margin-bottom: 12px;
+}
+@media (min-width: 992px) {
+  .charts-heading {
+    font-size: 28px;
+    text-align: left;
+  }
+}
+@media (min-width: 992px) {
+  .charts-heading {
+    font-size: 32px;
+    text-align: left;
+  }
+}
+.chart-buttons-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 32px;
+}
+@media (min-width: 768px) {
+  .chart-buttons-container {
+    justify-content: left;
+  }
+}
+.btn-not-selected {
+  background-color: #1c1c2b;
+  width: 113px;
+  height: 48px;
+  margin-right: 4px;
+  color: #64748b;
+  font-size: 16px;
+  font-family: 'roboto';
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border: 0px;
+}
+.btn-selected {
+  background-color: #1e1e30;
+  width: 113px;
+  height: 48px;
+  margin-right: 4px;
+  color: #e2e8f0;
+  font-size: 16px;
+  font-family: 'roboto';
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border: 0px;
+}
+.district-select-item-container {
+  background-color: #1e1e30;
+  width: 60%;
+  border-radius: 10px;
+  color: #64748b;
+  font-size: 19px;
+  font-family: 'roboto';
+  font-weight: 500;
+  margin-bottom: 15px;
+}

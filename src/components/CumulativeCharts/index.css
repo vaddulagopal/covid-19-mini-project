@@ -1,0 +1,16 @@
+.responsive-container-style {
+  width: 90%;
+  height: 192px;
+}
+@media (min-width: 768px) {
+  .responsive-container-style {
+    width: 90%px;
+    height: 220px;
+  }
+}
+@media (min-width: 992px) {
+  .responsive-container-style {
+    width: 1018px;
+    height: 238px;
+  }
+}

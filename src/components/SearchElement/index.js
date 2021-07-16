@@ -1,57 +1,60 @@
 import {Component} from 'react'
+import {AiOutlineSearch} from 'react-icons/ai'
 import SearchStateList from '../SearchStateList'
+import './index.css'
 
 class SearchElement extends Component {
-  statesList = this.props
+  statesList2 = this.props
 
   state = {
     inputValue: '',
+    isInputEntered: false,
   }
 
   updateStateInput = value => {
-    this.setState({inputValue: value})
+    this.setState({inputValue: value, isInputEntered: true})
   }
 
   handleInputValue = event => {
-    const inputValue = this.state
-    if (event.key === 'Enter') {
-      console.log(event.key)
-    } else {
-      const stateValue = inputValue + event.key
-      this.updateStateInput(stateValue)
-    }
+    const input = event.target.value
+    this.updateStateInput(input.toLowerCase())
   }
 
   getSearchedStates = inputValue => {
-    const statesList = this.props
-
-    console.log(statesList.statesList.statesList)
-    const matchedStateObject = statesList.statesList.statesList.filter(
-      eachState => eachState.state_name.includes(inputValue),
+    const statesList2 = this.props
+    const matchedStateObject = statesList2.statesList2.filter(eachState =>
+      eachState.state_name.toLowerCase().includes(inputValue),
     )
-    return (
-      <ul>
-        {Object.entries(matchedStateObject).map(eachMatchedState => (
-          <SearchStateList
-            matchedStateList={eachMatchedState}
-            key={eachMatchedState[0][0]}
-          />
-        ))}
-      </ul>
-    )
+    if (inputValue !== '') {
+      return (
+        <ul className="search-items-container">
+          {Object.entries(matchedStateObject).map(eachMatchedState => (
+            <SearchStateList
+              matchedStateList={eachMatchedState}
+              key={eachMatchedState[0]}
+            />
+          ))}
+        </ul>
+      )
+    }
+    return ''
   }
 
   render() {
-    const {inputValue} = this.state
+    const {inputValue, isInputEntered} = this.state
     return (
-      <div className="search-home-container">
-        <input
-          type="search"
-          onKeyDown={this.handleInputValue}
-          value={inputValue}
-        />
-        {this.getSearchedStates(inputValue)}
-      </div>
+      <>
+        <div className="input-container">
+          <AiOutlineSearch className="search-img" />
+          <input
+            className="search-element"
+            placeholder="Enter The State"
+            type="search"
+            onInputCapture={this.handleInputValue}
+          />
+        </div>
+        {isInputEntered && this.getSearchedStates(inputValue)}
+      </>
     )
   }
 }
