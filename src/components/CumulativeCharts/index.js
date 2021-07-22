@@ -9,7 +9,6 @@ import {
   Tooltip,
   Legend,
 } from 'recharts'
-import './index.css'
 
 const CumulativeCharts = props => {
   const {dateDataForCumulative, chartType, curveStroke} = props
@@ -73,7 +72,6 @@ const CumulativeCharts = props => {
             bottom: 0,
             left: 24,
           }}
-          className="styles"
         >
           <YAxis stroke={curveStroke} orientation="left">
             <Label
